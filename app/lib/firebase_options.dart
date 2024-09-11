@@ -60,4 +60,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'flutter-fcm-sample-1e933.appspot.com',
     iosBundleId: 'com.example.flutterFcmSample',
   );
+
 }
