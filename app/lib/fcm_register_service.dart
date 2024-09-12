@@ -1,7 +1,8 @@
 import 'package:dio/dio.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/foundation.dart';
-import 'package:flutter_fcm_sample/fcm_register_request_dto.dart';
+import 'package:flutter_fcm_sample/consts.dart';
+import 'package:flutter_fcm_sample/dto/fcm_register_dto.dart';
 
 class FCMRegisterService {
   final Dio dio = Dio(); // Dio instance
@@ -29,7 +30,7 @@ class FCMRegisterService {
   }
 
   Future<void> _sendFCMTokenToServer(String token) async {
-    const String url = 'http://172.30.1.65:3000/accounts/users/1/notification-settings';
+    const String url = '${SERVER_URL}/accounts/users/1/notification-settings';
 
     FCMRegisterReqeustDTO requestDTO = FCMRegisterReqeustDTO(fcmKey: token);
 

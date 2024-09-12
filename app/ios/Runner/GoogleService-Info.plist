@@ -9,7 +9,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.flutterFcmSample</string>
+	<string>flutterFcmSample</string>
 	<key>PROJECT_ID</key>
 	<string>flutter-fcm-sample-1e933</string>
 	<key>STORAGE_BUCKET</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:966137885722:ios:b7cb22bbb2c0c40337cda3</string>
+	<string>1:966137885722:ios:4304b1addbb14de237cda3</string>
 </dict>
 </plist>

@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'fcm_register_request_dto.dart';
+part of 'fcm_register_dto.dart';
 
 // **************************************************************************
 // JsonSerializableGenerator
