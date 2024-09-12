@@ -1,6 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'fcm_register_request_dto.g.dart';
+part 'fcm_register_dto.g.dart';
 
 @JsonSerializable()
 class FCMRegisterReqeustDTO {
