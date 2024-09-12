@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_fcm_sample/fcm_register_service.dart';
+import 'package:flutter_fcm_sample/fcm_request_service.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 void main() async {
@@ -8,7 +9,7 @@ void main() async {
   await Firebase.initializeApp();
 
   PermissionStatus status = await Permission.notification.request();
-  if(status.isGranted) {
+  if (status.isGranted) {
     FCMRegisterService fcmRegisterService = FCMRegisterService();
     fcmRegisterService.registerFCMToken();
   }
@@ -50,7 +51,13 @@ class MyHomePage extends StatelessWidget {
           children: <Widget>[
             OutlinedButton(
               child: Text("Send FCM Message"),
-              onPressed: (){},
+              onPressed: () async {
+                FCMReqeustService fcmReqeustService = FCMReqeustService();
+                String message = await fcmReqeustService.sendFCMTokenToServer();
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                  content: Text(message),
+                ));
+              },
             ),
           ],
         ),

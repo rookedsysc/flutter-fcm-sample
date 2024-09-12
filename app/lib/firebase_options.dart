@@ -54,11 +54,11 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDFmYP6ffgnGXK4CN1JhDJeb0Woty3_RJo',
-    appId: '1:966137885722:ios:b7cb22bbb2c0c40337cda3',
+    appId: '1:966137885722:ios:4304b1addbb14de237cda3',
     messagingSenderId: '966137885722',
     projectId: 'flutter-fcm-sample-1e933',
     storageBucket: 'flutter-fcm-sample-1e933.appspot.com',
-    iosBundleId: 'com.example.flutterFcmSample',
+    iosBundleId: 'flutterFcmSample',
   );
 
 }
